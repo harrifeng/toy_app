@@ -6,11 +6,9 @@
 #
 default: &default
   adapter: mysql2
-  pool: 5
   username: 'root'
-  password: 'welcomehfeng'
-  host: ENV['MYSQL_PORT_3306_TCP_ADDR']
-  timeout: 5000
+  password: <%= ENV['MYSQL_ENV_MYSQL_ROOT_PASSWORD'] %>
+  host: <%= ENV['MYSQL_PORT_3306_TCP_ADDR'] %>
 
 development:
   <<: *default
