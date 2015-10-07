@@ -7,8 +7,8 @@
 default: &default
   adapter: mysql2
   username: 'root'
-  password: <%= ENV['MYSQL_ENV_MYSQL_ROOT_PASSWORD'] %>
-  host: <%= ENV['MYSQL_PORT_3306_TCP_ADDR'] %>
+  password: 'welcome'
+  host: 'mysqlhost'
 
 development:
   <<: *default
