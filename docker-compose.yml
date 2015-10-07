@@ -1,0 +1,12 @@
+web:
+  build: .
+  ports:
+   - "3000:3000"
+  volumes:
+   - .:/code
+  links:
+   - mysql
+mysql:
+  image: mysql:5.6
+  environment:
+     - MYSQL_ROOT_PASSWORD=welcomehfeng

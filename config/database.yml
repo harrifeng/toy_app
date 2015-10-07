@@ -8,8 +8,8 @@ default: &default
   adapter: mysql2
   pool: 5
   username: 'root'
-  password: ''
-  host: localhost
+  password: 'welcomehfeng'
+  host: ENV['MYSQL_PORT_3306_TCP_ADDR']
   timeout: 5000
 
 development:
