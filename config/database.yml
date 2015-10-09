@@ -8,7 +8,7 @@ default: &default
   adapter: mysql2
   username: 'root'
   password: 'welcome'
-  host: toyapp_db_1
+  host: <%= ENV['DB_PORT_3306_TCP_ADDR'] %>
 
 development:
   <<: *default
