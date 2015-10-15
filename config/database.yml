@@ -7,7 +7,7 @@
 default: &default
   adapter: mysql2
   username: 'root'
-  password: 'welcome'
+  password: <%= ENV['DB_PWD'] %>
   host: <%= ENV['DB_HOST'] %>
 
 development:
